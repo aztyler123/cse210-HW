@@ -70,7 +70,7 @@ class Program
         {
             Console.WriteLine($"You have Passed this class with a {letter}, {percentage}%. ");
             //Console.Write v Console.WriteLine
-            //Console.WriteLine gets ride of the blacked out % sidn added due to Mac. 
+            //Console.WriteLine gets ride of the blacked out % sign added due to Mac. 
         }
         else
         {
