@@ -1,6 +1,6 @@
 using System;
 
-
+/*//My Abstraction
 //Entry
 //_date:string (this is due to how dates are written its a string). _userResponse:string. _prompt:string.
 //Display void
@@ -11,8 +11,8 @@ using System;
 
 //Prompts
 //_prompts:List<Prompt>.(Its the 5 different provided questions.) (use GetRandomPrompt())
-//Display void
-class Program
+//Display void */
+class Program //don't mess with the class program
 {
     static void Main(string[] args)
     {

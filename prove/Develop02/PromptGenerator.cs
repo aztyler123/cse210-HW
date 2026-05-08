@@ -16,7 +16,7 @@ public class promptGenerator
     public string GetRandomPrompt()
     {
         Random random = new Random();
-        //when using a .Count in C# make sure it is a capital C.
+        //when using a count in C# make sure it is a capital C.
         int index = random.Next(_prompts.Count); //generate a random index to help randomize the questions
         return _prompts[index];
     }
