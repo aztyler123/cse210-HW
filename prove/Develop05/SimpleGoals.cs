@@ -22,14 +22,9 @@ namespace EternalQuest
         }
         public override bool IsComplete() => _isComplete;
         
-        public override string GetDetailsString()
+        public override string GetStringRepresentation()
         {
-            string statusSymbol = _isComplete ? "[X]" : "[ ]";
-            return $"{statusSymbol} {ShortName} ({Description})";
-        }
-        public override string GetStringRepresent()
-        {
-            return $"SimpleGoal:{ShortName}, {Description}, {Points}, {_isComplete}";
+            return $"SimpleGoal:{ShortName},{Description},{Points},{_isComplete}";
         }
     }
     

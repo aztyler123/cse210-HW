@@ -26,7 +26,11 @@ namespace EternalQuest
         //polymorphic things
         public abstract int RecordEvent();
         public abstract bool IsComplete();
-        public abstract string GetDetailsString();
-        public abstract string GetStringRepresent();
+        public virtual string GetDetailsString()
+        {
+            string statusCheckbox = IsComplete() ? "[X]" : "[ ]";
+            return $"{statusCheckbox} {_shortName} ({_description})";
+        }
+        public abstract string GetStringRepresentation();
     }
 }
