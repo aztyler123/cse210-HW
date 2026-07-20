@@ -17,7 +17,8 @@ namespace FitnessTracker
         }
         public override double GetDistance()
         {
-            returnn(_speed * Minutes) / 60;
+            //according to helpful equations
+            return(_speed * Minutes) / 60;
         }
     }
 }

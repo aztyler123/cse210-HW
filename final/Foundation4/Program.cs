@@ -7,7 +7,17 @@ namespace FitnessTracker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Foundation4 World!");
+            List<Activity> activities = new List<Activity>();
+
+            activities.Add(new Running("03 Nov 2022", 30, 6.0));
+            activities.Add(new Cycling("03 Nov 2022", 30, 20.0));
+            activities.Add(new Swimming("03 Nov 2022", 20, 2));
+
+            Console.WriteLine("----------Fitness Center Log---------");
+            foreach (Activity activity in activities)
+            {
+                Console.WriteLine(activity.GetSummary());
+            }
         }
     }
 }
