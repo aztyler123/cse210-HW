@@ -1,9 +1,13 @@
 using System;
+using System.Collections.Generic;
 
-class Program
+namespace FitnessTracker
 {
-    static void Main(string[] args)
+        class Program
     {
-        Console.WriteLine("Hello Foundation4 World!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello Foundation4 World!");
+        }
     }
 }
